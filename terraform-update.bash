@@ -40,6 +40,6 @@ installTerraform(){
 getLastestVersion && getCurrentVersion
 
 # Installation
-[[ "${CURRENT_VERSION:1}" != ${LATEST_VERSION} ]]  && getTerraformPath && verifyTerraformEnv && downloadTerraform && installTerraform ||  echo "Latest Terraform (${LATEST_VERSION}) already installed."
+[ "${CURRENT_VERSION:1}" != ${LATEST_VERSION} ]  && getTerraformPath && verifyTerraformEnv && downloadTerraform && installTerraform ||  echo "Latest Terraform (${LATEST_VERSION}) already installed."
 
 
